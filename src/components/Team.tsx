@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight, User } from "lucide-react";
 const members = [
   { name: "Jeff Orr", role: "Realtor®, Principal Broker", image: "/team/jeff-orr.png" },
   { name: "Brenda Campbell", role: "Broker Associate, CMCA / Founder", image: "/team/brenda-campbell.jpg" },
-  { name: "Hammad Vaid", role: "Technology & Operations", image: null },
+  { name: "Kacie Shirley", role: "Operations Manager, Realtor® / COO", image: "/team/kacie-shirley.jpg" },
   { name: "Hannah Owens", role: "Leasing Coordinator, Realtor®", image: "/team/hannah-owens.png" },
   { name: "Tim Hensley", role: "Success Coordinator, Realtor®", image: "/team/tim-hensley.png" },
   { name: "Dillon Willis", role: "Maintenance & Special Projects Coordinator", image: "/team/dillon-willis.jpg" },
