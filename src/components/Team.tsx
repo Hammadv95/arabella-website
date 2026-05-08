@@ -15,8 +15,8 @@ const members = [
   { name: "Abigail Willis", role: "HOA Manager", image: "/team/abigail-willis.jpg" },
   { name: "Trinity Calton", role: "Accounting Specialist", image: "/team/trinity-calton.jpg" },
   { name: "Cassidy Harkleroad", role: "Accounting Specialist", image: "/team/cassidy-harkleroad.png" },
-  { name: "Amy", role: "Team Member", image: null },
-  { name: "Kyle", role: "Team Member", image: null },
+  { name: "Amy Dishner", role: "Cleaning Specialist", image: null },
+  { name: "Kyle Miravalles", role: "Property Management Assistant", image: null },
 ];
 
 const VISIBLE = 4;
