@@ -16,7 +16,7 @@ const members = [
   { name: "Trinity Calton", role: "Accounting Specialist", image: "/team/trinity-calton.jpg" },
   { name: "Cassidy Harkleroad", role: "Accounting Specialist", image: "/team/cassidy-harkleroad.png" },
   { name: "Amy Dishner", role: "Cleaning Specialist", image: null },
-  { name: "Kyle Miravalles", role: "Property Management Assistant", image: "/team/kyle-miravalles.jpg" },
+  { name: "Kyle Miravalles", role: "Property Management Assistant", image: "/team/kyle-miravalles.png" },
 ];
 
 const VISIBLE = 4;
