@@ -7,7 +7,7 @@ const stats = [
   {
     icon: Clock,
     value: "Since 2011",
-    label: "Serving East Tennessee",
+    label: "Serving Tennessee",
     color: "text-brand-500",
     bg: "bg-brand-50",
   },
@@ -21,7 +21,7 @@ const stats = [
   {
     icon: MapPin,
     value: "3 Offices",
-    label: "Across the Tri-Cities",
+    label: "Across Tennessee",
     color: "text-brand-500",
     bg: "bg-brand-50",
   },

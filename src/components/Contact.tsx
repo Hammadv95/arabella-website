@@ -35,7 +35,7 @@ export default function Contact() {
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
               Contact us today to learn how Arbella Properties can help you with
               your property management, real estate, or association needs. We serve
-              the Tri-Cities region and surrounding areas.
+              Tennessee and surrounding areas.
             </p>
 
             {/* Contact details */}

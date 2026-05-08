@@ -13,14 +13,14 @@ const testimonials = [
   },
   {
     name: "Home Buyer",
-    role: "Tri-Cities area",
+    role: "Tennessee",
     quote:
       "George Coates was awesome with my first home purchase. Every step was made so much easier with him by my side. Truly a blessing working with him. Need a realtor... go see George Coates!",
     stars: 5,
   },
   {
     name: "Seller & Buyer",
-    role: "East Tennessee",
+    role: "Tennessee",
     quote:
       "I can't say enough good things about Brenda Campbell and Arbella Properties! She and her agents are a pleasure to work with. The knowledge and awareness she has of the housing market is a great asset for anyone looking to buy or sell their home. This woman knows her stuff!",
     stars: 5,
@@ -42,10 +42,10 @@ export default function Testimonials() {
             What Our Clients Say
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-[var(--font-heading)] text-slate-900 tracking-tight mb-5">
-            Trusted by East Tennessee Property Owners
+            Trusted by Tennessee Property Owners
           </h2>
           <p className="text-lg text-slate-500 leading-relaxed">
-            Real feedback from property owners and home buyers who trust Arbella.
+            Real feedback from property owners and home buyers across Tennessee who trust Arbella.
           </p>
         </motion.div>
 

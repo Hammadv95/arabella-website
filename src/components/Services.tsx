@@ -32,7 +32,7 @@ const services = [
   {
     title: "Short-Term Rental Management",
     description:
-      "Arbella Properties is your go-to for the best short-term rental property management in the Tri-Cities market and beyond. We offer full service management from start to finish, ensuring the process is easy for you and an amazing experience for your guests!",
+      "Arbella Properties is your go-to for the best short-term rental property management in Tennessee and beyond. We offer full service management from start to finish, ensuring the process is easy for you and an amazing experience for your guests!",
     image: "/images/vacation.jpg",
     href: "https://arbellatn.com/short-term/",
     features: ["Guest Management", "Listing Optimization", "Revenue Maximization", "Full-Service"],
@@ -43,7 +43,7 @@ const services = [
       "We are a full service brokerage with a team of seasoned real estate agents who grasp the complexities of today's real estate market. Our focus is on quality, value, and results; providing premiere customer service and delivering solutions that fit your needs.",
     image: "/images/brokerage.jpg",
     href: "https://arbellatn.com/brokerage/",
-    features: ["Buying & Selling", "Market Analysis", "Licensed Agents", "Tri-Cities Coverage"],
+    features: ["Buying & Selling", "Market Analysis", "Licensed Agents", "Statewide Coverage"],
   },
 ];
 

@@ -32,8 +32,8 @@ export default function CtaBanner() {
             Let Arbella Manage Your Property While You Live Your Life
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10">
-            Join property owners across the Tri-Cities who trust Arbella Properties
-            to protect their investments. Serving East Tennessee since 2011.
+            Join property owners across Tennessee who trust Arbella Properties
+            to protect their investments. Serving Tennessee since 2011.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

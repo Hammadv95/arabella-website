@@ -1,36 +1,25 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, User } from "lucide-react";
 
 const members = [
   { name: "Jeff Orr", role: "Realtor®, Principal Broker", image: "/team/jeff-orr.png" },
-  { name: "Kacie Shirley", role: "Operations Manager, Realtor® / COO", image: "/team/kacie-shirley.jpg" },
   { name: "Brenda Campbell", role: "Broker Associate, CMCA / Founder", image: "/team/brenda-campbell.jpg" },
+  { name: "Hammad Vaid", role: "Technology & Operations", image: null },
   { name: "Hannah Owens", role: "Leasing Coordinator, Realtor®", image: "/team/hannah-owens.png" },
   { name: "Tim Hensley", role: "Success Coordinator, Realtor®", image: "/team/tim-hensley.png" },
-  { name: "Janie Barron", role: "Principal Broker, Fall Branch", image: "/team/janie-barron.jpg" },
-  { name: "Aaron Taylor", role: "Realtor®, Co-Manager", image: "/team/aaron-taylor.png" },
-  { name: "George Coates", role: "Realtor®", image: "/team/george-coates.png" },
-  { name: "Jessica Coates", role: "Realtor®", image: "/team/jessica-coates.png" },
-  { name: "Sara Frank", role: "Realtor®, Property Manager", image: "/team/sara-frank.png" },
-  { name: "Brooke Painter", role: "Property Manager", image: "/team/brooke-painter.png" },
-  { name: "Dillon Morris", role: "Sales", image: "/team/dillon-morris.png" },
-  { name: "Lauren Williams", role: "Property Manager", image: "/team/lauren-williams.png" },
-  { name: "Cassidy Harkleroad", role: "Property Manager", image: "/team/cassidy-harkleroad.png" },
-  { name: "Marta Simon", role: "Property Manager", image: "/team/marta-simon.png" },
-  { name: "Vanessa", role: "Team Member", image: "/team/vanessa.png" },
-  { name: "Robin", role: "Team Member", image: "/team/robin.png" },
-  { name: "Alysa", role: "Team Member", image: "/team/alysa.png" },
-  { name: "Masha", role: "Team Member", image: "/team/masha.png" },
-  { name: "Amber", role: "Team Member", image: "/team/amber.png" },
-  { name: "Amy", role: "Team Member", image: "/team/amy.png" },
+  { name: "Dillon Willis", role: "Maintenance & Special Projects Coordinator", image: "/team/dillon-willis.jpg" },
+  { name: "Abigail Willis", role: "HOA Manager", image: "/team/abigail-willis.jpg" },
+  { name: "Trinity Calton", role: "Accounting Specialist", image: "/team/trinity-calton.jpg" },
+  { name: "Cassidy Harkleroad", role: "Accounting Specialist", image: "/team/cassidy-harkleroad.png" },
+  { name: "Amy", role: "Team Member", image: null },
+  { name: "Kyle", role: "Team Member", image: null },
 ];
 
 const VISIBLE = 4;
-const GAP = 20;
 
 export default function Team() {
   const [page, setPage] = useState(0);
@@ -61,7 +50,7 @@ export default function Team() {
             </h2>
             <p className="text-lg text-slate-500 max-w-xl leading-relaxed">
               Our dedicated team of licensed professionals, board-certified CMCAs,
-              and property management experts serving the Tri-Cities region.
+              and property management experts serving Tennessee.
             </p>
           </div>
 
@@ -92,25 +81,34 @@ export default function Team() {
         <div className="overflow-hidden">
           <motion.div
             className="flex"
-            animate={{ x: `calc(-${page * 100}% - ${page * GAP}px)` }}
+            animate={{ x: `calc(-${page * 100}% - ${page * 20}px)` }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            style={{ gap: `${GAP}px` }}
+            style={{ gap: "20px" }}
           >
-            {members.map((person, i) => (
+            {members.map((person) => (
               <div
                 key={person.name}
                 className="group flex-shrink-0"
-                style={{ width: `calc((100% - ${GAP * (VISIBLE - 1)}px) / ${VISIBLE})` }}
+                style={{ width: `calc((100% - ${20 * (VISIBLE - 1)}px) / ${VISIBLE})` }}
               >
                 <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
                   <div className="relative aspect-[3/4] overflow-hidden bg-slate-100">
-                    <Image
-                      src={person.image}
-                      alt={person.name}
-                      fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                    />
+                    {person.image ? (
+                      <Image
+                        src={person.image}
+                        alt={person.name}
+                        fill
+                        className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 768px) 50vw, 25vw"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
+                        <div className="w-20 h-20 rounded-full bg-slate-300/50 flex items-center justify-center mb-3">
+                          <User className="w-10 h-10 text-slate-400" />
+                        </div>
+                        <span className="text-xs text-slate-400 font-medium">Photo coming soon</span>
+                      </div>
+                    )}
                   </div>
                   <div className="p-4 text-center">
                     <h3 className="font-bold font-[var(--font-heading)] text-slate-900 text-sm lg:text-base">

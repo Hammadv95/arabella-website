@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
             <p className="text-sm text-slate-400 leading-relaxed mb-6 max-w-sm">
               Professional property management, real estate brokerage, and
-              association management across East Tennessee&apos;s Tri-Cities region.
+              association management across Tennessee.
               Serving the community since 2011.
             </p>
             {/* Social links */}

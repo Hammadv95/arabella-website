@@ -46,7 +46,7 @@ export default function Header() {
       >
         <div className="bg-brand-600/95 backdrop-blur text-white/90 text-xs">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-9">
-            <span className="font-medium">Arbella Properties Inc: Tri-Cities East Tennessee</span>
+            <span className="font-medium">Arbella Properties Inc: Tennessee</span>
             <div className="hidden sm:flex items-center gap-4">
               {portalLinks.map((p) => (
                 <a

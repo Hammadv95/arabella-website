@@ -11,14 +11,14 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&q=80"
-          alt="East Tennessee property"
+          alt="Tennessee property"
           fill
           className="object-cover"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/80 to-slate-900/50" />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/55 to-slate-900/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 w-full">
@@ -36,11 +36,11 @@ export default function Hero() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-sm text-white/90 mb-8"
             >
               <Home className="w-4 h-4 text-brand-300" />
-              <span className="font-medium">Serving the Tri-Cities Since 2011</span>
+              <span className="font-medium">Serving Tennessee Since 2011</span>
             </motion.div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] xl:text-6xl font-extrabold font-[var(--font-heading)] text-white leading-[1.08] tracking-tight mb-6">
-              Your East Tennessee{" "}
+              Your Tennessee{" "}
               <span className="relative">
                 <span className="relative z-10 text-brand-300">
                   Property Experts
@@ -53,7 +53,7 @@ export default function Hero() {
             </p>
 
             <p className="text-base text-white/40 mb-10 max-w-xl">
-              Johnson City &bull; Kingsport &bull; Bristol &bull; Greeneville &bull; and surrounding areas
+              Johnson City &bull; Kingsport &bull; Bristol &bull; Greeneville &bull; Nashville &bull; and beyond
             </p>
 
             {/* CTAs */}

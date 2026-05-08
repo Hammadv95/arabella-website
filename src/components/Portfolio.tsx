@@ -80,7 +80,7 @@ export default function Portfolio() {
               Properties We Manage
             </h2>
             <p className="text-lg text-slate-500 max-w-xl leading-relaxed">
-              A glimpse into our managed portfolio across the Tri-Cities region —
+              A glimpse into our managed portfolio across Tennessee —
               from single-family homes to commercial properties and HOA communities.
             </p>
           </div>

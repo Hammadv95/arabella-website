@@ -90,7 +90,7 @@ export default function Blog() {
             </h2>
             <p className="text-lg text-slate-500 max-w-xl leading-relaxed">
               Expert advice on property management, HOA governance, and real
-              estate in East Tennessee.
+              estate in Tennessee.
             </p>
           </div>
           <a

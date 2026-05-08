@@ -17,11 +17,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Arbella Properties - Property Management & Real Estate in East Tennessee",
+  title: "Arbella Properties - Property Management & Real Estate in Tennessee",
   description:
-    "Full-service property management, real estate brokerage, and association management in the Tri-Cities region of East Tennessee. Residential, commercial, HOA, and short-term rental services.",
+    "Full-service property management, real estate brokerage, and association management across Tennessee. Residential, commercial, HOA, and short-term rental services.",
   keywords:
-    "property management East Tennessee, Tri-Cities property management, Johnson City rental management, association management, HOA management Tennessee, Arbella Properties",
+    "property management Tennessee, Tennessee property management, Johnson City rental management, association management, HOA management Tennessee, Arbella Properties",
 };
 
 export default function RootLayout({

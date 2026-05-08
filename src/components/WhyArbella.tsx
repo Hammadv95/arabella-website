@@ -13,7 +13,7 @@ const reasons = [
     icon: MapPin,
     title: "Deep Local Expertise",
     description:
-      "Our team lives and works across East Tennessee. We understand the Tri-Cities market — Johnson City, Kingsport, Bristol, and Greeneville — because we've been here since 2011.",
+      "Our team lives and works across Tennessee. We understand the local markets — Johnson City, Kingsport, Bristol, Greeneville, and beyond — because we've been here since 2011.",
   },
   {
     icon: Heart,
