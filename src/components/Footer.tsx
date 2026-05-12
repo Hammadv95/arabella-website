@@ -26,7 +26,6 @@ const footerLinks = {
 };
 
 const offices = [
-  { city: "Johnson City", address: "1805 W State of Franklin Rd #900, 37604" },
   { city: "Fall Branch", address: "1706 Hwy 93, 37656" },
   { city: "Greeneville", address: "104 Sam Doak Street, 37745" },
 ];
@@ -129,11 +128,11 @@ export default function Footer() {
                 (423) 446-8154
               </a>
               <a
-                href="mailto:info@arbellatn.com"
+                href="mailto:support@arbellatn.com"
                 className="flex items-center gap-3 text-sm text-slate-400 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4 text-brand-500" />
-                info@arbellatn.com
+                support@arbellatn.com
               </a>
               <div className="pt-3 space-y-3">
                 {offices.map((o) => (

@@ -58,7 +58,7 @@ export default function WhyArbella() {
               Trusted Property Management Since 2011
             </h2>
             <p className="text-lg text-white/70 leading-relaxed mb-8">
-              Founded by Brenda Campbell, Arbella Properties has grown into East
+              Founded by Brenda Campbell, Arbella Properties has grown into
               Tennessee&apos;s trusted name in property management and real estate.
               We combine local market knowledge with hands-on professionalism to
               protect and grow your investment.
@@ -67,8 +67,8 @@ export default function WhyArbella() {
             {/* Key metrics */}
             <div className="grid grid-cols-3 gap-4 p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur">
               {[
-                { value: "14+", label: "Communities" },
-                { value: "3", label: "Office locations" },
+                { value: "19+", label: "Associations" },
+                { value: "2", label: "Office locations" },
                 { value: "5", label: "Service lines" },
               ].map((m) => (
                 <div key={m.label} className="text-center">

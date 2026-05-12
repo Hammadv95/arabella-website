@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Send, Phone, Mail, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
 
 const offices = [
-  { city: "Johnson City", address: "1805 W State of Franklin Rd #900, 37604" },
   { city: "Fall Branch", address: "1706 Hwy 93, 37656" },
   { city: "Greeneville", address: "104 Sam Doak Street, 37745" },
 ];
@@ -55,7 +54,7 @@ export default function Contact() {
                 </div>
               </a>
               <a
-                href="mailto:info@arbellatn.com"
+                href="mailto:support@arbellatn.com"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center group-hover:bg-navy-100 transition-colors">
@@ -64,7 +63,7 @@ export default function Contact() {
                 <div>
                   <p className="text-sm text-slate-400">Email us</p>
                   <p className="font-semibold text-slate-900">
-                    info@arbellatn.com
+                    support@arbellatn.com
                   </p>
                 </div>
               </a>

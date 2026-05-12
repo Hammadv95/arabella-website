@@ -13,14 +13,14 @@ const stats = [
   },
   {
     icon: Building2,
-    value: "14+",
-    label: "Communities Managed",
+    value: "19+",
+    label: "Associations Managed",
     color: "text-navy-700",
     bg: "bg-navy-50",
   },
   {
     icon: MapPin,
-    value: "3 Offices",
+    value: "2 Offices",
     label: "Across Tennessee",
     color: "text-brand-500",
     bg: "bg-brand-50",
