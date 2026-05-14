@@ -6,7 +6,7 @@ import { MapPin, Calendar, ArrowRight, Home } from "lucide-react";
 
 const properties = [
   {
-    image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80",
     address: "Residential Property",
     city: "Johnson City",
     type: "Single Family",
@@ -15,7 +15,7 @@ const properties = [
     baths: 3,
   },
   {
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80",
+    image: "/images/association.jpg",
     address: "Community Association",
     city: "Kingsport",
     type: "HOA Community",
@@ -24,7 +24,7 @@ const properties = [
     baths: 0,
   },
   {
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&q=80",
     address: "Short-Term Rental",
     city: "Bristol",
     type: "Vacation Rental",
@@ -33,16 +33,16 @@ const properties = [
     baths: 2,
   },
   {
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=600&q=80",
     address: "Commercial Office",
-    city: "Johnson City",
+    city: "Fall Branch",
     type: "Commercial",
     since: "2016",
     beds: 0,
     baths: 0,
   },
   {
-    image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80",
     address: "Residential Rental",
     city: "Greeneville",
     type: "Single Family",
@@ -51,7 +51,7 @@ const properties = [
     baths: 3,
   },
   {
-    image: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=600&q=80",
     address: "Multi-Family Property",
     city: "Fall Branch",
     type: "Multi-Family",
