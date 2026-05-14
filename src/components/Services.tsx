@@ -33,7 +33,7 @@ const services = [
     title: "Short-Term Rental Management",
     description:
       "Arbella Properties is your go-to for the best short-term rental property management in Tennessee and beyond. We offer full service management from start to finish, ensuring the process is easy for you and an amazing experience for your guests!",
-    image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&q=80",
+    image: "/images/vacation.jpg",
     href: "https://arbellatn.com/short-term/",
     features: ["Guest Management", "Listing Optimization", "Revenue Maximization", "Full-Service"],
   },

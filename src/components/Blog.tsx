@@ -23,7 +23,7 @@ const posts = [
     category: "Getting Started",
     author: "Kacie Shirley",
     date: "Dec 2025",
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80",
   },
   {
     title: "Your Tenant Privacy Rights in Tennessee",
@@ -53,7 +53,7 @@ const posts = [
     category: "HOA Management",
     author: "Arbella Team",
     date: "Dec 2025",
-    image: "https://images.unsplash.com/photo-1524813686514-a57563d77965?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
   },
   {
     title: "Arbella Properties Transitions Sales Division to Real Broker LLC",
@@ -63,7 +63,7 @@ const posts = [
     category: "Company News",
     author: "Arbella Team",
     date: "Dec 2025",
-    image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
   },
 ];
 
