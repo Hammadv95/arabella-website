@@ -10,8 +10,8 @@ export default function Hero() {
       {/* Background — Johnson City skyline */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1920&q=80"
-          alt="Tennessee mountains"
+          src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1920&q=80"
+          alt="Tennessee property"
           fill
           className="object-cover"
           priority
