@@ -13,14 +13,14 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section id="testimonials" className="py-24 lg:py-32 bg-slate-50">
+    <section id="testimonials" className="py-14 lg:py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center max-w-2xl mx-auto mb-12"
+          className="text-center max-w-2xl mx-auto mb-8"
         >
           <p className="text-sm font-semibold tracking-widest uppercase text-brand-500 mb-4">
             What Our Clients Say

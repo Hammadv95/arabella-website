@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Menu, X, Phone, ChevronDown } from "lucide-react";
@@ -17,8 +17,67 @@ const portalLinks = [
   { label: "Tenant Login", href: "https://app.propertyware.com/pw/index.html#/login/tenant/arbellatn" },
   { label: "Owner Login", href: "https://app.propertyware.com/pw/portals/arbellatn/owner.action" },
   { label: "HOA Login", href: "https://home.arbellatn.com/login" },
-  { label: "Maintenance", href: "https://app.propertymeld.com/tenant/arbella-properties-inc/" },
+  { label: "Maintenance Request", href: "https://app.propertymeld.com/tenant/arbella-properties-inc/" },
+  { label: "HomeWise Docs", href: "https://www.homewisedocs.com/" },
 ];
+
+const propertyLinks = [
+  { label: "Rental Properties", href: "https://arbellatn.com/rental-properties/" },
+  { label: "Properties For Sale", href: "https://arbellatn.idxbroker.com/idx/results/listings" },
+];
+
+function Dropdown({ label, items, scrolled }: { label: string; items: { label: string; href: string }[]; scrolled: boolean }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen(!open)}
+        className={`flex items-center gap-1 px-3.5 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
+          scrolled
+            ? "text-slate-600 hover:text-brand-500 hover:bg-brand-50"
+            : "text-white/80 hover:text-white hover:bg-white/10"
+        }`}
+      >
+        {label}
+        <ChevronDown className={`w-3.5 h-3.5 transition-transform ${open ? "rotate-180" : ""}`} />
+      </button>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.15 }}
+            className="absolute top-full right-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-slate-100 overflow-hidden z-50"
+          >
+            {items.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="block px-4 py-2.5 text-sm text-slate-600 hover:text-brand-500 hover:bg-brand-50 transition-colors"
+              >
+                {item.label}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -48,7 +107,7 @@ export default function Header() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-9">
             <span className="font-medium">Arbella Properties Inc: Tennessee</span>
             <div className="hidden sm:flex items-center gap-4">
-              {portalLinks.map((p) => (
+              {portalLinks.slice(0, 4).map((p) => (
                 <a
                   key={p.label}
                   href={p.href}
@@ -100,6 +159,8 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
+            <Dropdown label="Portals" items={portalLinks} scrolled={scrolled} />
+            <Dropdown label="Properties" items={propertyLinks} scrolled={scrolled} />
           </nav>
 
           {/* Desktop CTA */}
@@ -163,6 +224,20 @@ export default function Header() {
               <div className="pt-3 mt-2 border-t border-slate-100 space-y-1">
                 <p className="px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Portals</p>
                 {portalLinks.map((p) => (
+                  <a
+                    key={p.label}
+                    href={p.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-4 py-2.5 text-sm text-slate-500 hover:text-brand-500 rounded-lg transition-colors"
+                  >
+                    {p.label}
+                  </a>
+                ))}
+              </div>
+              <div className="pt-3 mt-2 border-t border-slate-100 space-y-1">
+                <p className="px-4 text-xs font-semibold text-slate-400 uppercase tracking-wider">Properties</p>
+                {propertyLinks.map((p) => (
                   <a
                     key={p.label}
                     href={p.href}

@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
 import OwnerResident from "@/components/OwnerResident";
-import Portfolio from "@/components/Portfolio";
 import WhyArbella from "@/components/WhyArbella";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
@@ -21,7 +20,6 @@ export default function Home() {
         <TrustBar />
         <Services />
         <OwnerResident />
-        <Portfolio />
         <WhyArbella />
         <Team />
         <Testimonials />
