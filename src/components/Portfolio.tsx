@@ -15,7 +15,7 @@ const properties = [
     baths: 3,
   },
   {
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80",
+    image: "/images/association.jpg",
     address: "Community Association",
     city: "Kingsport",
     type: "HOA Community",
@@ -24,7 +24,7 @@ const properties = [
     baths: 0,
   },
   {
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
+    image: "/images/vacation.jpg",
     address: "Short-Term Rental",
     city: "Bristol",
     type: "Vacation Rental",
@@ -51,7 +51,7 @@ const properties = [
     baths: 3,
   },
   {
-    image: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&q=80",
+    image: "/images/multi-family.jpg",
     address: "Multi-Family Property",
     city: "Fall Branch",
     type: "Multi-Family",
